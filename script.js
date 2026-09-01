@@ -64,7 +64,7 @@
 
   const projectVideo = document.querySelector('.project-video video');
   if (projectVideo) {
-    const playbackRate = 0.3;
+    const playbackRate = 0.15;
     projectVideo.playbackRate = playbackRate;
     projectVideo.defaultPlaybackRate = playbackRate;
     projectVideo.addEventListener('loadedmetadata', () => {
