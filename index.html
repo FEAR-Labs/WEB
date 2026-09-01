@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="description" content="FEAR-Labs builds focused software with a clear purpose." data-i18n-content="description">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
   <title>FEAR-Labs</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -34,6 +34,11 @@
 
     <section class="work section" id="work">
       <div class="section-label" data-i18n="workLabel">01 / Work</div>
+      <div class="project-video" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/projects.mp4" type="video/mp4">
+        </video>
+      </div>
       <article class="project">
         <div>
           <p class="project-kicker" data-i18n="projectKicker">Windows · Open source</p>
