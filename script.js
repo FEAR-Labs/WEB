@@ -6,6 +6,75 @@
   const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
   const storageKey = 'fear-labs-theme';
 
+  const copy = {
+    en: {
+      description: 'FEAR-Labs builds focused software with a clear purpose.',
+      home: 'FEAR-Labs home',
+      navigation: 'Main navigation',
+      navWork: 'Work',
+      navAbout: 'About',
+      eyebrow: 'Independent software lab',
+      heroTitle: 'Software should<br>feel simple.',
+      heroCopy: 'We build focused tools for everyday computing.',
+      explore: 'Explore our work',
+      workLabel: '01 / Work',
+      projectKicker: 'Windows · Open source',
+      projectCopy: 'Window management, simplified. Center, maximize and restore without breaking your workflow.',
+      viewProject: 'View project',
+      aboutLabel: '02 / About',
+      aboutTitle: 'Small software.<br>Clear purpose.',
+      aboutCopy: 'FEAR-Labs creates focused tools designed to stay out of the way and make everyday computing simpler.',
+      lightTheme: 'Switch to light theme',
+      darkTheme: 'Switch to dark theme'
+    },
+    es: {
+      description: 'FEAR-Labs crea software simple, enfocado y con un propósito claro.',
+      home: 'Inicio de FEAR-Labs',
+      navigation: 'Navegación principal',
+      navWork: 'Proyectos',
+      navAbout: 'Nosotros',
+      eyebrow: 'Laboratorio independiente de software',
+      heroTitle: 'Software simple.<br>Como debe ser.',
+      heroCopy: 'Creamos herramientas concretas para hacer más simple el uso diario de tu computador.',
+      explore: 'Conoce nuestros proyectos',
+      workLabel: '01 / Proyectos',
+      projectKicker: 'Windows · Código abierto',
+      projectCopy: 'Controla tus ventanas sin complicaciones. Centra, maximiza y restaura sin interrumpir lo que estás haciendo.',
+      viewProject: 'Ver proyecto',
+      aboutLabel: '02 / Nosotros',
+      aboutTitle: 'Menos ruido.<br>Más propósito.',
+      aboutCopy: 'En FEAR-Labs creamos herramientas enfocadas en resolver bien una tarea: rápidas, claras y pensadas para integrarse naturalmente a tu día a día.',
+      lightTheme: 'Cambiar a tema claro',
+      darkTheme: 'Cambiar a tema oscuro'
+    }
+  };
+
+  const language = (navigator.languages || [navigator.language || 'en'])
+    .some(lang => lang.toLowerCase().startsWith('es')) ? 'es' : 'en';
+  const text = copy[language];
+
+  root.lang = language;
+
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const value = text[element.dataset.i18n];
+    if (value) element.textContent = value;
+  });
+
+  document.querySelectorAll('[data-i18n-html]').forEach(element => {
+    const value = text[element.dataset.i18nHtml];
+    if (value) element.innerHTML = value;
+  });
+
+  document.querySelectorAll('[data-i18n-aria]').forEach(element => {
+    const value = text[element.dataset.i18nAria];
+    if (value) element.setAttribute('aria-label', value);
+  });
+
+  document.querySelectorAll('[data-i18n-content]').forEach(element => {
+    const value = text[element.dataset.i18nContent];
+    if (value) element.setAttribute('content', value);
+  });
+
   const savedTheme = localStorage.getItem(storageKey);
   if (savedTheme === 'light' || savedTheme === 'dark') {
     root.dataset.theme = savedTheme;
@@ -15,9 +84,9 @@
 
   const updateLabel = () => {
     if (!button) return;
-    const next = currentTheme() === 'dark' ? 'light' : 'dark';
-    button.setAttribute('aria-label', `Switch to ${next} theme`);
-    button.setAttribute('title', `Switch to ${next} theme`);
+    const label = currentTheme() === 'dark' ? text.lightTheme : text.darkTheme;
+    button.setAttribute('aria-label', label);
+    button.setAttribute('title', label);
   };
 
   button?.addEventListener('click', () => {
