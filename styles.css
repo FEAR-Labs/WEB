@@ -105,6 +105,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 .text-link { display: inline-block; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
 
 .section { padding: clamp(64px, 7vw, 105px) clamp(20px, 3.5vw, 56px); }
+.work { padding-top: clamp(32px, 3.5vw, 52px); }
 .section-label { margin-bottom: clamp(42px, 5vw, 72px); color: var(--muted); }
 .project {
   display: grid;
@@ -155,6 +156,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
   .hero { min-height: 92svh; padding-bottom: 112px; }
   .hero h1 { font-size: clamp(54px, 17vw, 88px); }
   .section { padding-top: 64px; padding-bottom: 64px; }
+  .work { padding-top: 32px; }
   .project { grid-template-columns: 1fr; gap: 42px; padding: 42px 0 64px; }
   .project + .project { padding-top: 58px; padding-bottom: 64px; }
   .project-copy { justify-self: start; }
