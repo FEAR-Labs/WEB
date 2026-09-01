@@ -72,27 +72,32 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 .scroll-prompt {
   position: absolute;
   left: 50%;
-  bottom: clamp(24px, 3.5vw, 46px);
+  bottom: clamp(25px, 3.5vw, 44px);
+  width: 44px;
+  height: 44px;
   transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  white-space: nowrap;
-  opacity: .84;
-  transition: opacity 160ms ease;
+  display: grid;
+  place-items: center;
+  opacity: .72;
+  transition: opacity 220ms ease, transform 220ms ease;
 }
-.scroll-prompt:hover { opacity: 1; }
+.scroll-prompt:hover {
+  opacity: 1;
+  transform: translateX(-50%) translateY(2px);
+}
 .scroll-arrow {
-  display: block;
-  font-size: 24px;
-  line-height: 1;
-  animation: scroll-hint 1.6s ease-in-out infinite;
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.45;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: scroll-hint 2.2s cubic-bezier(.4, 0, .2, 1) infinite;
 }
 @keyframes scroll-hint {
-  0%, 100% { transform: translateY(0); opacity: .55; }
-  50% { transform: translateY(8px); opacity: 1; }
+  0%, 100% { transform: translateY(-2px); opacity: .55; }
+  50% { transform: translateY(5px); opacity: 1; }
 }
 .text-link { display: inline-block; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
 
