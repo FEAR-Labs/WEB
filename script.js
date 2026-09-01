@@ -64,10 +64,11 @@
 
   const projectVideo = document.querySelector('.project-video video');
   if (projectVideo) {
-    projectVideo.playbackRate = 0.65;
-    projectVideo.defaultPlaybackRate = 0.65;
+    const playbackRate = 0.45;
+    projectVideo.playbackRate = playbackRate;
+    projectVideo.defaultPlaybackRate = playbackRate;
     projectVideo.addEventListener('loadedmetadata', () => {
-      projectVideo.playbackRate = 0.65;
+      projectVideo.playbackRate = playbackRate;
     }, { once: true });
   }
 })();
