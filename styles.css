@@ -44,10 +44,11 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 .nav > a:hover { opacity: 1; }
 
 .hero {
+  position: relative;
   min-height: 100svh;
   display: flex;
   align-items: flex-end;
-  padding: 130px clamp(20px, 3.5vw, 56px) clamp(48px, 7vw, 96px);
+  padding: 130px clamp(20px, 3.5vw, 56px) clamp(110px, 11vw, 150px);
   background: var(--blue);
   color: var(--blue-text);
 }
@@ -68,11 +69,30 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
   letter-spacing: -.07em;
   font-weight: 600;
 }
-.hero-copy {
-  max-width: 520px;
-  margin: clamp(32px, 5vw, 64px) 0 24px;
-  font-size: clamp(19px, 2vw, 28px);
-  letter-spacing: -.025em;
+.scroll-prompt {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(24px, 3.5vw, 46px);
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: .84;
+  transition: opacity 160ms ease;
+}
+.scroll-prompt:hover { opacity: 1; }
+.scroll-arrow {
+  display: block;
+  font-size: 24px;
+  line-height: 1;
+  animation: scroll-hint 1.6s ease-in-out infinite;
+}
+@keyframes scroll-hint {
+  0%, 100% { transform: translateY(0); opacity: .55; }
+  50% { transform: translateY(8px); opacity: 1; }
 }
 .text-link { display: inline-block; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
 
@@ -113,7 +133,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 @media (max-width: 720px) {
   .site-header { padding-top: 20px; }
   .nav > a { display: none; }
-  .hero { min-height: 92svh; }
+  .hero { min-height: 92svh; padding-bottom: 112px; }
   .hero h1 { font-size: clamp(54px, 17vw, 88px); }
   .project { grid-template-columns: 1fr; gap: 48px; }
   .project-copy { justify-self: start; }
