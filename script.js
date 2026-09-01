@@ -13,7 +13,7 @@
       eyebrow: 'Independent software lab', heroTitle: 'Software should<br>feel simple.',
       heroCopy: 'We build focused tools for everyday computing.', explore: 'Explore our work',
       workLabel: '01 / Work', projectKicker: 'Windows · Open source',
-      projectCopy: 'Window management, simplified. Center, maximize and restore without breaking your workflow.',
+      projectCopy: 'Window management, simplified. Center, maximize and restore without breaking your workflow. (More capabilities are on the way.)',
       viewProject: 'View project', aboutLabel: '02 / About', aboutTitle: 'Small software.<br>Clear purpose.',
       aboutCopy: 'FEAR-Labs creates focused tools designed to stay out of the way and make everyday computing simpler.',
       lightTheme: 'Switch to light theme', darkTheme: 'Switch to dark theme'
@@ -24,7 +24,7 @@
       eyebrow: 'Laboratorio independiente de software', heroTitle: 'Software simple.<br>Como debe ser.',
       heroCopy: 'Creamos herramientas concretas para hacer más simple el uso diario de tu computador.',
       explore: 'Conoce nuestros proyectos', workLabel: '01 / Proyectos', projectKicker: 'Windows · Código abierto',
-      projectCopy: 'Controla tus ventanas sin complicaciones. Centra, maximiza y restaura sin interrumpir lo que estás haciendo.',
+      projectCopy: 'Controla tus ventanas sin complicaciones. Centra, maximiza y restaura sin interrumpir lo que estás haciendo. (Nuevas funciones ya están en camino.)',
       viewProject: 'Ver proyecto', aboutLabel: '02 / Nosotros', aboutTitle: 'Menos ruido.<br>Más propósito.',
       aboutCopy: 'En FEAR-Labs creamos herramientas enfocadas en resolver bien una tarea: rápidas, claras y pensadas para integrarse naturalmente a tu día a día.',
       lightTheme: 'Cambiar a tema claro', darkTheme: 'Cambiar a tema oscuro'
