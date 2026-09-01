@@ -7,7 +7,7 @@
     en: {
       description: 'FEAR-Labs builds focused software with a clear purpose.',
       home: 'FEAR-Labs home', navigation: 'Main navigation', navWork: 'Work', navAbout: 'About',
-      eyebrow: 'Independent software lab', heroTitle: 'Software should<br>feel simple.',
+      eyebrow: 'Independent software lab', heroTitle: 'Simple software.<br>By design.',
       workLabel: '01 / Work', projectKicker: 'Windows · Open source',
       projectCopy: 'Window management, simplified. Center, maximize and restore without breaking your workflow.',
       projectNote: 'Built to stay simple.',
@@ -17,7 +17,7 @@
     es: {
       description: 'FEAR-Labs crea software simple, enfocado y con un propósito claro.',
       home: 'Inicio de FEAR-Labs', navigation: 'Navegación principal', navWork: 'Proyectos', navAbout: 'Nosotros',
-      eyebrow: 'Laboratorio independiente de software', heroTitle: 'Software simple.<br>Como debe ser.',
+      eyebrow: 'Laboratorio independiente de software', heroTitle: 'Software simple.<br>Por diseño.',
       workLabel: '01 / Proyectos', projectKicker: 'Windows · Código abierto',
       projectCopy: 'Controla tus ventanas sin complicaciones. Centra, maximiza y restaura sin interrumpir lo que estás haciendo.',
       projectNote: 'Hecho para mantenerse simple.',
