@@ -61,4 +61,13 @@
     const value = text[element.dataset.i18nContent];
     if (value) element.setAttribute('content', value);
   });
+
+  const projectVideo = document.querySelector('.project-video video');
+  if (projectVideo) {
+    projectVideo.playbackRate = 0.65;
+    projectVideo.defaultPlaybackRate = 0.65;
+    projectVideo.addEventListener('loadedmetadata', () => {
+      projectVideo.playbackRate = 0.65;
+    }, { once: true });
+  }
 })();
