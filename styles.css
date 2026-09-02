@@ -180,7 +180,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
   justify-content: flex-end;
   gap: 12px;
   width: fit-content;
-  margin: 28px 0 0 auto;
+  margin: -30px 0 0 auto;
   font-size: clamp(18px, 1.8vw, 25px);
   color: var(--text);
   letter-spacing: -.025em;
@@ -238,7 +238,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
   .project { grid-template-columns: 1fr; gap: 42px; padding: 42px 0 64px; }
   .project + .project { padding-top: 58px; padding-bottom: 64px; }
   .project-copy { justify-self: start; }
-  .store-link { margin-left: 0; }
+  .store-link { margin: 28px 0 0; }
   .about-content > p { margin-left: 0; }
 }
 
