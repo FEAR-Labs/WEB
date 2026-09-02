@@ -7,20 +7,20 @@
       description: 'FEAR-Labs builds focused software with a clear purpose.',
       home: 'FEAR-Labs home', navigation: 'Main navigation', navWork: 'Work', navAbout: 'About',
       eyebrow: 'Independent software lab', heroTitle: 'Simple software.<br>By design.',
-      workLabel: '01 / Work', projectKicker: 'Windows · Open source',
+      workLabel: '01 /', projectKicker: 'Windows · Open source',
       projectCopy: 'Window management, simplified. Center, maximize and restore without breaking your workflow.',
       projectNote: 'Built to stay simple.',
-      viewProject: 'Project', aboutLabel: '02 / About', aboutTitle: 'Small software.<br>Clear purpose.',
+      viewProject: 'Project', aboutLabel: '02 /', aboutTitle: 'Small software.<br>Clear purpose.',
       aboutCopy: 'FEAR-Labs creates focused tools designed to stay out of the way and make everyday computing simpler.'
     },
     es: {
       description: 'FEAR-Labs crea software simple, enfocado y con un propósito claro.',
       home: 'Inicio de FEAR-Labs', navigation: 'Navegación principal', navWork: 'Proyectos', navAbout: 'Nosotros',
       eyebrow: 'Laboratorio independiente de software', heroTitle: 'Software simple.<br>Por diseño.',
-      workLabel: '01 / Proyectos', projectKicker: 'Windows · Código abierto',
+      workLabel: '01 /', projectKicker: 'Windows · Código abierto',
       projectCopy: 'Controla tus ventanas sin complicaciones. Centra, maximiza y restaura sin interrumpir lo que estás haciendo.',
       projectNote: 'Hecho para mantenerse simple.',
-      viewProject: 'Proyecto', aboutLabel: '02 / Nosotros', aboutTitle: 'Menos ruido.<br>Más propósito.',
+      viewProject: 'Proyecto', aboutLabel: '02 /', aboutTitle: 'Menos ruido.<br>Más propósito.',
       aboutCopy: 'En FEAR-Labs creamos herramientas enfocadas en resolver bien una tarea: rápidas, claras y pensadas para integrarse naturalmente a tu día a día.'
     }
   };
