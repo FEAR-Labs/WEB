@@ -177,17 +177,19 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 .store-link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: flex-end;
+  gap: 12px;
   width: fit-content;
-  margin-top: 28px;
-  font-size: 15px;
-  color: var(--muted);
-  transition: color 160ms ease;
+  margin: 28px 0 0 auto;
+  font-size: clamp(18px, 1.8vw, 25px);
+  color: var(--text);
+  letter-spacing: -.025em;
+  transition: opacity 160ms ease;
 }
-.store-link:hover { color: var(--text); }
+.store-link:hover { opacity: .72; }
 .microsoft-logo {
-  width: 17px;
-  height: 17px;
+  width: 1em;
+  height: 1em;
   fill: currentColor;
   flex: 0 0 auto;
 }
@@ -236,6 +238,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
   .project { grid-template-columns: 1fr; gap: 42px; padding: 42px 0 64px; }
   .project + .project { padding-top: 58px; padding-bottom: 64px; }
   .project-copy { justify-self: start; }
+  .store-link { margin-left: 0; }
   .about-content > p { margin-left: 0; }
 }
 
